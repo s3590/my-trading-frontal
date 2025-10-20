@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         analyzeButton.disabled = true;
         try {
             // !!! هام: سنقوم بتغيير هذا الرابط لاحقًا
-            const response = await fetch('YOUR_BACKEND_URL/analyze-dual', {
+            const response = await fetch('https://my-trading-backing.onrender.com', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ image_m5: imageDataM5, image_m15: imageDataM15 }),
@@ -65,3 +65,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
